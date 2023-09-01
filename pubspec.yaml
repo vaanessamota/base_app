@@ -11,6 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  micro_core:
+    path: ../micro_core/
   login_micro_app:
     path: ../login_micro_app/
 
