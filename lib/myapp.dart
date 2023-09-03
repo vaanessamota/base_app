@@ -39,4 +39,8 @@ class MyApp extends StatelessWidget with BaseApp {
     MicroCoreDependencies.setUp(locator);
     LoginMicroAppDependencies.setUp(locator);
   }
+
+  void turnMocksOn() {
+    isMockedTurnedOn = true;
+  }
 }
