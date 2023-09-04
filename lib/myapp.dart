@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:login_micro_app/app/login_micro_app_dependencies.dart';
 import 'package:login_micro_app/app/login_micro_app_resolver.dart';
 import 'package:micro_core/micro_core.dart';
-import 'package:micro_core/utils/app_locator.dart';
 
 class MyApp extends StatelessWidget with BaseApp {
   MyApp({super.key});
@@ -35,7 +34,6 @@ class MyApp extends StatelessWidget with BaseApp {
       ];
 
   void configureDependencies() {
-    final locator = AppLocator();
     MicroCoreDependencies.setUp(locator);
     LoginMicroAppDependencies.setUp(locator);
   }
