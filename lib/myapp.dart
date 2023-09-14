@@ -9,8 +9,6 @@ class MyApp extends StatelessWidget with BaseApp {
 
   @override
   Widget build(BuildContext context) {
-    super.registerRouters();
-
     return MaterialApp(
       title: 'Base App',
       theme: ThemeData(
@@ -32,6 +30,11 @@ class MyApp extends StatelessWidget with BaseApp {
   List<MicroApp>? get microApps => [
         LoginMicroAppResolver(),
       ];
+
+  void init() {
+    super.registerRouters();
+    configureDependencies();
+  }
 
   void configureDependencies() {
     MicroCoreDependencies.setUp(locator);

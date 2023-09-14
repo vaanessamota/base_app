@@ -4,6 +4,6 @@ import 'package:flutter/material.dart';
 void main() {
   final myapp = MyApp();
   myapp.isAppMocked(true);
-  myapp.configureDependencies();
+  myapp.init();
   runApp(myapp);
 }
